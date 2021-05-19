@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.btn-grey {
+  background-color: #8D8D8D;
+  color: #FFFFFF !important;
+  border-radius: 8px;
+  height: 1.8rem; }
+
+.btn {
+  background-color: #C22026;
+  font-size: 1.5rem;
+  color: white;
+  padding: .5rem 2rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 90px;
+  background-color: #FFFFFF;
+  z-index: 100; }
+  .navigation-number {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    height: 4rem;
+    padding: 3rem; }
+    .navigation-number p:first-child::after {
+      content: "";
+      border-right: 1px solid white;
+      padding-right: 3rem; }
+    .navigation-number p:last-child {
+      padding-left: 3rem; }
+  .navigation-elements {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem; }
+    .navigation-elements img {
+      width: 175px;
+      height: 60px;
+      justify-content: center;
+      margin: 1rem 5rem;
+      padding-bottom: 2rem; }
+    .navigation-elements__list {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+      .navigation-elements__list-items {
+        display: flex; }
+      .navigation-elements__list a {
+        padding: 2rem;
+        color: #000000; }
+      .navigation-elements__list a[class] {
+        font-weight: 600; }
+      .navigation-elements__list a:hover {
+        font-weight: 600; }
+
+.main-section {
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  position: relative; }
+  .main-section__desc {
+    background-color: #FFFFFF;
+    height: 32rem;
+    width: 55rem;
+    padding: 4rem 2.5rem 5rem 20rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    z-index: 2; }
+    .main-section__desc-header {
+      color: #C22026;
+      font-size: 2.5rem;
+      margin-bottom: 1rem; }
+    .main-section__desc-para {
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+      color: #8D8D8D;
+      justify-content: left; }
+    .main-section__desc-anchor {
+      text-align: right;
+      position: relative;
+      bottom: -2rem;
+      left: 19rem; }
+  .main-section__img {
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    max-width: 128rem;
+    height: 100vh; }
+    .main-section__img-div {
+      position: relative; }
+  .main-section .dot {
+    background-color: #F2F2F2;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 2rem;
+    right: 50rem;
+    z-index: 100; }
+  .main-section .dot::before {
+    content: "";
+    background-color: #C22026;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0rem;
+    right: 3rem;
+    z-index: 100; }
+  .main-section .dot::after {
+    content: "";
+    background-color: #F2F2F2;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0rem;
+    left: 3rem;
+    z-index: 100; }
+
+.work-card {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; }
+  .work-card__left {
+    flex: 1 0 70%; }
+    .work-card__left h3 {
+      font-size: 2.7rem;
+      text-align: left; }
+    .work-card__left p {
+      font-size: 2rem;
+      font-weight: 300;
+      padding: 3rem 6rem 3rem 0; }
+  .work-card__right {
+    text-align: center;
+    flex: 0 1 30%; }
+    .work-card__right h3 {
+      font-size: 2.7rem;
+      margin: 1rem 0; }
+    .work-card__right-bg {
+      background-color: #F2F2F2;
+      box-shadow: 3px 3px 3px 3px #888888;
+      height: 28rem;
+      width: 28rem; }
