@@ -1,0 +1,127 @@
+.main-section {
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  // padding: 0;
+
+
+  &__desc{
+    background-color: $color-white;
+    height: 32rem;
+    width: 55rem;
+    padding: 4rem 2.5rem 5rem 20rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    z-index: 2;
+
+    &-header {
+      color: $color-red;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &-para {
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+      color: $color-grey;
+      justify-content: left;
+
+    }
+
+    &-anchor {
+      text-align: right;
+      position: relative;
+      bottom: -2rem;
+      left: 19rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    max-width: 128rem;
+    height: 100vh;
+
+    &-div{
+      position: relative;
+    }
+  }
+
+  .dot {
+    background-color: $color-light;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 2rem;
+    right: 50rem;
+    z-index: 100;
+  }
+
+  .dot::before {
+    content: "";
+    background-color: $color-red;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0rem;
+    right: 3rem;
+    z-index: 100;
+  }
+  .dot::after {
+    content: "";
+    background-color: $color-light;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0rem;
+    left: 3rem;
+    z-index: 100;
+  }
+
+}
+
+.work-card {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &__left {
+    flex: 1 0 70%;
+    h3 {
+      font-size: 2.7rem;
+      text-align: left;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 300;
+      padding: 3rem 6rem 3rem 0;
+    }
+  }
+
+  &__right {
+    text-align: center;
+    flex: 0 1 30%;
+    h3 {
+      font-size: 2.7rem;
+      margin: 1rem 0;
+
+    }
+
+    &-bg {
+      background-color: $color-light;
+      box-shadow: 3px 3px 3px 3px #888888;
+      height: 28rem;
+      width: 28rem;
+    }
+
+  }
+}
