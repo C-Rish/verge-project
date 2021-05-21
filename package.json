@@ -10,5 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-Rish/verge-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/C-Rish/verge-project/issues"
+  },
+  "homepage": "https://github.com/C-Rish/verge-project#readme"
 }
