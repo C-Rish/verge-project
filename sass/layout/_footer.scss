@@ -22,9 +22,7 @@
     & a:hover{
       fill: $color-red-2;
     }
-
   }
-
 
 
   &-links {
@@ -58,8 +56,30 @@
   &-contact:hover .footer-c {
     color: $color-black;
     border-bottom: 1px solid $color-red-2;
-
-
   }
 }
 
+  
+.footer-policies{
+  display: flex;
+  justify-content: space-between;
+
+  &__rights {
+    font-size: 1.5rem;
+  }
+
+  &__lists {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    li {
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+    }
+
+    li:nth-child(2){
+      border-left: 1px solid $color-black;
+      border-right: 1px solid $color-black;
+    }
+  }
+}

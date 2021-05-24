@@ -20,8 +20,14 @@ img{
 a {
   display: inline-block;
   text-decoration: none;
-  
 }
+
+a:focus,
+a:visited {
+  
+  color: black;
+}
+
 
 li {
   list-style: none;
@@ -36,7 +42,10 @@ li {
   font-size: 2.5rem;
   text-transform: uppercase;
 }
-
+ .red-header-3 {
+   @extend .header-3;
+   color: $color-red;
+ }
 .header-5 {
   font-size: 1.3rem;
   font-weight: 600;
