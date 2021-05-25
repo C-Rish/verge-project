@@ -7,10 +7,11 @@
 html {
   font-size: 62.5%; 
   font-family: 'Open Sans', sans-serif;
+
 }
 
 .container {
-  margin: 0 8rem;
+  margin: 0 12rem;
 }
 
 img{
@@ -20,12 +21,6 @@ img{
 a {
   display: inline-block;
   text-decoration: none;
-}
-
-a:focus,
-a:visited {
-  
-  color: black;
 }
 
 
@@ -42,13 +37,16 @@ li {
   font-size: 2.5rem;
   text-transform: uppercase;
 }
- .red-header-3 {
+
+.red-header-3 {
    @extend .header-3;
    color: $color-red;
- }
+}
+
 .header-5 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .header-span {
@@ -56,6 +54,39 @@ li {
   font-weight: 400;
   margin-bottom: 1rem;
 }
+
+.p3 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: .2px;
+}
+
+.p4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.p6 {
+  font-size: 1rem;
+}
+
+.d-inline{
+  display: inline-block;
+}
+
+.d-block{
+  display: block;
+}
+
+.bg-gray{
+  background-color: $color-section-bg;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+
 
 .uni-dot {
     background-color: $color-light;

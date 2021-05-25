@@ -8,14 +8,13 @@
 .btn {
   background-color: $color-red-2;
   font-size: 1.5rem;
-  color: white;
+  color: $color-white;
+  text-align: center;
   padding: .5rem 2rem;
   font-weight: 600;
   text-transform: uppercase;
-  transition: all .5s;
   border: solid 1px $color-red-2;
   transition: all .7s;
-
 }
 
 .btn:hover {
@@ -29,15 +28,26 @@
   color: $color-red-2;
   border: solid 1px $color-red-2;
   transition: all .7s;
-
-
 }
 
 .btn-reverse:hover {
   background-color: $color-red-2;
   color:$color-white ;
+}
+
+.btn-gray-2 {
+  @extend .btn;
+  background-color: $color-grey-dark;
+  border: solid 1px $color-grey-dark;
 
 }
 
+.btn-gray-2:hover {
+  background-color: $color-white;
+  border: solid 1px $color-grey-dark;
+  color:$color-grey-dark ;
+
+
+}
 
 

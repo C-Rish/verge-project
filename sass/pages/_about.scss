@@ -42,3 +42,184 @@
     }
   }
 }
+
+// SOLUTIONS SECTION CSS
+.solutions {
+
+  &-desc{
+    width: 100%;
+
+    h3 {
+      margin: 5rem 0 2rem 0;
+    }
+
+    p{
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__list {
+      flex: 1 0 33%;
+      padding: 4rem;
+      text-align: center;
+    }
+
+    &__foot{
+      flex: 1 1 100%;
+      padding: 4rem;
+    }
+  }
+}
+
+// STORY SECTION CSS
+.story {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0;
+
+  &-desc {
+    flex: 1 1 60%;
+
+    p {
+      padding: 1rem 8rem 1rem 0;
+      line-height: 1.5;
+
+    }
+  }
+
+  &-img {
+    background-color: $color-white;
+
+    flex: 1 1 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3{
+      width: 50%;
+      border-bottom: 1px solid $color-red;
+      margin: 0 auto;
+    }
+
+    &__image {
+      width: 28rem;
+      height: 25rem;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-around;
+
+      a {
+        margin: 1rem 4rem;
+      }
+    }
+  } 
+} 
+
+// LEADER SECTION CSS
+.leader {
+
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  h3 {
+    margin: 5rem 0;
+    // border-bottom: solid 1px $color-red;
+    padding: 0 0 4px;
+  }
+
+  &-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+  &__card {
+    height: 30rem;
+    width: 23.5rem;
+    position: relative;
+
+    &__info{
+        height: 7.5rem;
+        width: 21rem;
+        background-color: $color-white;
+        position: absolute;
+        bottom: 1.3rem;
+        left: 1.3rem;
+        border-radius: .7rem;
+        padding: 1.3rem;
+        
+        a {
+          color: $color-black;
+          margin-left: 11.5rem;
+          transition: all .2s;
+          transform: scale(1);
+          i {
+            padding: .3rem;
+          }
+        }
+
+        a:hover,
+        a:hover i {
+          transform: scale(1.1);
+
+        }
+      }
+    }
+  }
+}
+
+// TEST SECTION
+.testimonials {
+    background: url(../../img/about-img/testimonials-bg.png) center left;
+    background-size: cover;
+    height: 49rem;
+    padding: 2rem 0;
+    
+    h3{
+      border-bottom: 1px solid $color-red-2;
+      width: 20%;
+      margin: 0 auto;
+    }
+
+    &-main {
+      display: flex;
+      &__list {
+
+          img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 1000px;
+          }
+
+          p{
+            padding: 2rem;
+            font-style: italic;
+            width: 90%;
+          }
+          span {
+            padding-left: 2rem;
+          }
+        }
+
+        & div:first-child {
+          border-right: 1px solid $color-red-2;
+           padding: 5rem 4rem 5rem 0;
+        }
+
+        & div:last-child {
+          padding: 5rem 0rem 5rem 4rem;
+
+        }
+
+    } // TESTI MAIN END
+}// TESTI END
