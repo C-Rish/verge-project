@@ -1,0 +1,44 @@
+.partner {
+
+  &-para {
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-demo {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 13rem;
+    gap: 8rem;
+
+    &__video {
+      flex: 1 1 55%;
+
+      iframe {
+        height:26rem;
+        width: 100%;
+      }
+
+      &-desc {
+        h3 {
+          margin: 1rem 0;
+         
+        }
+        p {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+    
+    &__image {
+      flex: 1 1 45%;
+      height: 52rem;
+      overflow: hidden;
+
+      img {
+        margin-left: 3.5rem;
+      }
+    }
+  }
+}

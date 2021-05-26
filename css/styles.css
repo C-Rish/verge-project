@@ -705,3 +705,29 @@ p {
       .form-container form p {
         font-size: 1.2rem;
         color: #8D8D8D; }
+
+.partner-para {
+  padding: 3rem;
+  text-align: center;
+  margin-bottom: 4rem; }
+
+.partner-demo {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 13rem;
+  gap: 8rem; }
+  .partner-demo__video {
+    flex: 1 1 55%; }
+    .partner-demo__video iframe {
+      height: 26rem;
+      width: 100%; }
+    .partner-demo__video-desc h3 {
+      margin: 1rem 0; }
+    .partner-demo__video-desc p {
+      margin-bottom: 1.5rem; }
+  .partner-demo__image {
+    flex: 1 1 45%;
+    height: 52rem;
+    overflow: hidden; }
+    .partner-demo__image img {
+      margin-left: 3.5rem; }
