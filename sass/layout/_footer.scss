@@ -31,6 +31,7 @@
     display: block;
     margin-bottom: 3.5rem;
     width: 6rem;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0);
   }
 
   &-links:hover {
@@ -45,6 +46,8 @@
   &-c {
     color: $color-grey;
     font-size: 1.4rem;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0);
+
 
   }
 
@@ -63,11 +66,10 @@
 .footer-policies{
   display: flex;
   justify-content: space-between;
-
   &__rights {
     font-size: 1.5rem;
   }
-
+  
   &__lists {
     display: flex;
     font-size: 1.2rem;

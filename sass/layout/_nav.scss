@@ -53,7 +53,7 @@
       text-transform: uppercase;
       
       &-items {
-        display: flex;
+      display: flex;
       justify-content: space-between;
 
 
@@ -61,16 +61,12 @@
       }
       a {
         padding: 2rem;
-        color: $color-black;
-      }
-      
-      a[class] {
-        font-weight: 600;
+        color: $color-grey-dark;
       }
       
       a:hover {
-        font-weight: 600;
-
+        
+        color: $color-black;
       }
 
     }
