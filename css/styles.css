@@ -176,7 +176,8 @@ p {
     color: #8D8D8D;
     display: block;
     margin-bottom: 3.5rem;
-    width: 6rem; }
+    width: 6rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0); }
   .footer-links:hover {
     color: #000000;
     border-bottom: 1px solid #C22026; }
@@ -185,7 +186,8 @@ p {
     color: #8D8D8D; }
   .footer-c {
     color: #8D8D8D;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0); }
   .footer-contact:hover p {
     color: #000000; }
   .footer-contact:hover .footer-c {
@@ -253,11 +255,9 @@ p {
         justify-content: space-between; }
       .navigation-elements__list a {
         padding: 2rem;
-        color: #000000; }
-      .navigation-elements__list a[class] {
-        font-weight: 600; }
+        color: #383A41; }
       .navigation-elements__list a:hover {
-        font-weight: 600; }
+        color: #000000; }
 
 .main-section {
   background-color: white;
@@ -768,4 +768,63 @@ p {
   margin-top: 8rem; }
 
 .faq-form {
-  display: flex; }
+  display: flex;
+  justify-content: space-around; }
+  .faq-form__search {
+    align-self: center; }
+    .faq-form__search-field {
+      display: flex; }
+    .faq-form__search input {
+      height: 5rem;
+      width: 45rem;
+      padding: 1rem;
+      font-size: 1.5rem; }
+    .faq-form__search i {
+      background-color: #000000;
+      color: #FFFFFF;
+      font-size: 2.5rem;
+      padding: 1rem; }
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  margin-top: 5rem; }
+  .list-section {
+    display: flex;
+    flex-direction: column; }
+    .list-section li {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: #EFEFEF;
+      height: 6rem;
+      width: 47rem;
+      margin: 1rem 0;
+      padding: 2rem; }
+      .list-section li a {
+        color: #000000;
+        max-width: 39rem; }
+      .list-section li i {
+        position: absolute;
+        right: 1rem;
+        top: 2.5rem; }
+    .list-section:first-child {
+      border-right: 1px solid #C22026;
+      padding-right: 6rem; }
+
+.questions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .questions-text {
+    color: #383A41; }
+  .questions i {
+    font-size: 5rem;
+    color: #383A41; }
+
+.media-cards__card {
+  display: flex;
+  background-color: #EFEFEF; }
+  .media-cards__card div:first-child {
+    flex: 1 1 30%; }

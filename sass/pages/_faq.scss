@@ -1,3 +1,78 @@
 .faq-form {
   display: flex;
+  justify-content: space-around;
+
+  &__search {
+    align-self: center;
+
+    &-field {
+      display: flex;
+    }
+    input {
+      height: 5rem;
+      width: 45rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    i {
+      background-color: $color-black;
+      color: $color-white;
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  &-section {
+    display: flex;
+    flex-direction: column;
+    li {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: $color-section-bg;
+      height: 6rem;
+      width: 47rem;
+      margin: 1rem 0;
+      padding: 2rem;
+
+      a{
+        color: $color-black;
+        max-width: 39rem;
+     }
+
+     i {
+       position: absolute;
+       right: 1rem;
+       top: 2.5rem;
+     }
+
+     
+    }
+    &:first-child {
+      border-right: 1px solid $color-red;
+      padding-right: 6rem;
+    }
+  }
+}
+
+// QUESTIONS SECTION
+.questions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-text {
+    color: $color-grey-dark;
+  }
+
+  i {
+    font-size: 5rem;
+    color: $color-grey-dark;
+  }
 }
