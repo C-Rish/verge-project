@@ -46,8 +46,20 @@
   background-color: $color-white;
   border: solid 1px $color-grey-dark;
   color:$color-grey-dark ;
+}
+
+.btn-gray-2-reverse {
+  @extend .btn-gray-2;
+  background-color: $color-white;
+  border: solid 1px $color-grey-dark;
+  color:$color-grey-dark ;
+}
 
 
+.btn-gray-2-reverse:hover {
+  background-color: $color-grey-dark;
+  border: solid 1px $color-grey-dark;
+  color: white;
 }
 
 

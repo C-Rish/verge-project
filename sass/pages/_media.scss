@@ -2,10 +2,60 @@
 
   &__card {
     display: flex;
+    justify-content: space-between;
     background-color: $color-section-bg;
+    padding: 5rem;
+
 
     & div:first-child {
-      flex: 1 1 30%;
+      max-width: 35rem;
+    }
+
+    & div:last-child {
+      position: relative;
+
+      span {
+        font-size: 23rem;
+        font-weight: 600;
+        padding: 0;
+        position: absolute;
+        top: -5rem;
+        right: 25rem;
+        color: transparent;
+        -webkit-text-stroke: 2px $color-red-2;
+      }
+
+      .top-pic {
+        position: absolute;
+        z-index: 2;
+        right: 11rem;
+        top:5rem;
+      }
+    }
+  }
+}
+
+.demo {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 2rem;
+
+  div {
+    height: 28rem;
+    width: 50rem;
+  }
+
+  &-left {
+    img {
+      padding: 6rem;
+    }
+  }
+
+  &-right {
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 }
