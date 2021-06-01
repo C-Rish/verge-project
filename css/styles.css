@@ -83,6 +83,12 @@ li {
 .mb-3 {
   margin-bottom: 3rem; }
 
+.mb-4 {
+  margin-bottom: 4rem; }
+
+.mb-5 {
+  margin-bottom: 5rem; }
+
 .uni-dot {
   background-color: #F2F2F2;
   width: 1.5rem;
@@ -135,7 +141,6 @@ p {
   background-color: #C22026;
   font-size: 1.5rem;
   color: #FFFFFF;
-  text-align: center;
   padding: .5rem 2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -257,6 +262,13 @@ p {
     display: flex;
     justify-content: space-between;
     margin-right: 2rem; }
+    .navigation-elements .logo {
+      padding: .5rem 0;
+      margin-left: -2rem;
+      width: 15rem; }
+      .navigation-elements .logo img {
+        width: 100%;
+        max-width: 100%; }
     .navigation-elements img {
       width: 175px;
       height: 60px;
@@ -270,10 +282,20 @@ p {
       text-transform: uppercase; }
       .navigation-elements__list-items {
         display: flex;
-        justify-content: space-between; }
-      .navigation-elements__list a {
-        padding: 2rem;
-        color: #383A41; }
+        justify-content: space-between;
+        padding: 1.5rem 0;
+        min-width: 5rem; }
+        .navigation-elements__list-items .log-in {
+          width: 11rem;
+          min-width: 11rem; }
+        .navigation-elements__list-items .sign-up {
+          background-color: #383A41;
+          color: #FFFFFF;
+          width: 11rem;
+          min-width: 11rem; }
+        .navigation-elements__list-items a {
+          padding: .5rem 2.5rem;
+          color: #383A41; }
       .navigation-elements__list a:hover {
         color: #000000; }
 
@@ -606,7 +628,7 @@ p {
     top: 0;
     right: 0rem;
     max-width: 126rem;
-    height: 100vh; }
+    max-height: 100vh; }
     .main-section__img-div {
       position: relative; }
   .main-section .dot {
@@ -813,6 +835,48 @@ p {
   .demo-right img {
     height: 100%;
     width: 100%; }
+
+.newsroom-article {
+  display: flex;
+  justify-content: space-between; }
+  .newsroom-article p {
+    padding: 8rem 8rem 5rem 0; }
+
+.newsroom p {
+  padding: 1rem 0; }
+
+.newsroom .article-quote {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: #C22026;
+  font-weight: bold;
+  padding: 2rem 10em;
+  text-align: center; }
+  .newsroom .article-quote span {
+    color: #383A41; }
+
+.imgs {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #FFFFFF;
+  height: 31rem;
+  box-shadow: 0px 1px 10px #000000; }
+
+.pdf {
+  margin-bottom: 5rem; }
+
+.case-studies {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem; }
+  .case-studies__div {
+    height: 43rem;
+    width: 50rem;
+    padding: 5rem;
+    box-shadow: 0 4px 20px #8D8D8D; }
+    .case-studies__div h3 {
+      color: #383A41; }
 
 .partner-para {
   padding: 3rem;
