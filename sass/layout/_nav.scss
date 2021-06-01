@@ -35,6 +35,17 @@
     justify-content: space-between;
     margin-right: 2rem;
 
+    .logo {
+      padding: .5rem 0;
+      margin-left: -2rem;
+      width: 15rem;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
     img {
       width: 175px;
       height: 60px;
@@ -55,13 +66,26 @@
       &-items {
       display: flex;
       justify-content: space-between;
+      padding: 1.5rem 0;
+      min-width: 5rem;
 
-
-
+      .log-in {
+        width: 11rem;
+        min-width: 11rem;
+        
       }
-      a {
-        padding: 2rem;
-        color: $color-grey-dark;
+      
+      .sign-up {
+        background-color: $color-grey-dark;
+        color: $color-white;
+        width: 11rem;
+        min-width: 11rem;
+        }
+
+        a {
+          padding: .5rem 2.5rem;
+          color: $color-grey-dark;
+        }
       }
       
       a:hover {
