@@ -5,24 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Verge</title>
+
+  <!-- FONT AWESOME -->
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
   <!-- OPEN SANS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
-
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+  
   <!-- NAVIGATION SECTION -->
-  <nav class="navigation">
+  <div class="navigation">
     <div class="navigation-number">
       <p>1-8888#</p>
       <p>Book a Demo</p>
     </div>
-
+  
     <div class="navigation-elements">
+      
       <a class="logo" href="index.html"><img src="img/Verge-Logo-Final-1.png" alt=""></a> 
-      <div class="navigation-elements__list">
+      <div class="navigation-elements__list navbar-links" id="mainNavBar">
         <ul class="navigation-elements__list-items">
           <li><a href="about.html">About</a></li>
           <li><a href="solutions.html">Solutions</a></li>
@@ -33,8 +40,11 @@
           <li><a href="#" class = "sign-up" >SIGN UP</a></li>
         </ul>           
       </div>
+      <a class="toggle-button">
+        <i class="fas fa-bars bar"></i>
+      </a>
     </div>
-  </nav>
+  </div>
 
   <!-- MAIN IMAGE SECTION -->
 
@@ -53,6 +63,7 @@
         </div>
       </div>
   </div>
+  </nav>
 
   <!-- WHAT WE DO CARD -->
   <section class="work-card container">
@@ -127,7 +138,7 @@
   </section>
 
   <!-- PARTNERS SECTION -->
-  <div class="partners container">
+  <div class="partners">
     <h3 class="header">OUR CURRENT PARTNERS </h3>
     <div class="partners-img">
       <img src="img/John-Deere-Patner.png" alt="">
@@ -139,7 +150,7 @@
 
   <!-- CARDS SECTION -->
 
-  <div class="case container">
+  <div class="case">
     <div class="case-left">
       <h2 class="header-span text-align-center">CASE STUDY</h2>
       <div class="case-item">
@@ -180,7 +191,7 @@
 </div>
 
 <!-- PARTNER SAYING SECTION -->
-<div class="quote container">
+<div class="quote">
   <h3 class=" quote-heading header-3">What our partners are saying.</h3>
   <div class="quote-list text">
     <p class="quote-list__para">The experience with First Pass has increased our efficiency, flow and organization. Our 10 combines line up every time!</p>
@@ -189,7 +200,7 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="container">
+<footer>
   <div class="footer">
     <div class="footer-logo">
       <img class = "logo" src="img/Verge-Logo-Final.png" alt="">
@@ -223,12 +234,11 @@
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Terms of Service</a></li>
       <li><a href="faq.html">FAQs</a></li> 
-
     </ul>
-
   </div>
 </footer>
 
+<script src="toggle.js"></script>
 
 </body>
 </html>

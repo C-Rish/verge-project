@@ -16,28 +16,32 @@
 </head>
 <body>
 
-    <!-- NAVIGATION SECTION -->
-    <nav class="navigation">
-      <div class="navigation-number">
-        <p>1-8888#</p>
-        <p>Book a Demo</p>
-      </div>
+  <!-- NAVIGATION SECTION -->
+  <div class="navigation">
+    <div class="navigation-number">
+      <p>1-8888#</p>
+      <p>Book a Demo</p>
+    </div>
   
-      <div class="navigation-elements">
-        <a href="index.html"><img src="img/Verge-Logo-Final-1.png" alt=""></a> 
-        <div class="navigation-elements__list">
-            <ul class="navigation-elements__list-items">
-              <li><a href="about.html">About</a></li>
-              <li><a href="solutions.html">Solutions</a></li>
-              <li><a href="partners.html">Partners</a></li>
-              <li><a href="media.html">Media</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="#" class="test" >LOG IN</a></li>
-              <li><a href="#" class = "btn-grey" >SIGN UP</a></li>
-            </ul>           
-        </div>
+    <div class="navigation-elements">
+      
+      <a class="logo" href="index.html"><img src="img/Verge-Logo-Final-1.png" alt=""></a> 
+      <div class="navigation-elements__list navbar-links" id="mainNavBar">
+        <ul class="navigation-elements__list-items">
+          <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" class="log-in" >LOG IN</a></li>
+          <li><a href="#" class = "sign-up" >SIGN UP</a></li>
+        </ul>           
       </div>
-    </nav>
+      <a href="#" class="toggle-button">
+        <i class="fas fa-bars bar"></i>
+      </a>
+    </div>
+  </div>
 
     <!-- ABOUT US SECTION -->
     <div class="about">  
@@ -254,6 +258,7 @@
 
 
 
+<script src="toggle.js"></script>
 
 </body>
 </html>
