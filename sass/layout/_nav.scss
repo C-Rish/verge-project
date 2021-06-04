@@ -7,7 +7,7 @@
   left: 0;
   height: 90px;
   background-color: $color-white;
-  z-index: 100;
+  z-index: 101;
 
   &-number {
     display: flex;
@@ -34,11 +34,14 @@
     display: flex;
     justify-content: space-between;
     margin-right: 2rem;
+    width: 100%;
 
     .logo {
       padding: .5rem 0;
       margin-left: -2rem;
       width: 15rem;
+      min-width: 15rem;
+      z-index: 100;
 
       img {
         width: 100%;
@@ -80,6 +83,7 @@
         color: $color-white;
         width: 11rem;
         min-width: 11rem;
+        margin-right: 1rem;
         }
 
         a {
@@ -99,3 +103,78 @@
 
 } //.navigation End
   
+
+
+
+// Youtube
+.navbar {
+  z-index: 1000;
+}
+.navbar-links ul {
+  display: flex;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toggle-button .bar {
+  height: 5px;
+  width: 100%;
+  color: $color-red;
+  // font-size: 3rem;
+}
+
+@media (max-width:970px){
+
+    .navigation-elements__list-items{
+      position: fixed;
+      top: 8rem;
+      display: flex;
+      flex-direction: column;
+      background-color: $color-white;
+      width: 100%;
+      text-align: right;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .toggle-button {
+    display: flex;
+    font-size: 3rem;
+    top: 4rem;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}

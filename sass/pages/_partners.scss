@@ -3,14 +3,20 @@
   &-para {
     padding: 3rem;
     text-align: center;
-    margin-bottom: 4rem;
+    margin: 0 10rem 4rem 10rem;
+    
+    @media (max-width:900px){
+      margin: 0 6rem 4rem 6rem;
+    }
+    @media (max-width:650px){
+      margin: 0 3rem 4rem 3rem;
+    }
   }
 
   &-demo {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 6rem 13rem;
-    gap: 8rem;
 
     &__video {
       flex: 1 1 55%;
@@ -55,22 +61,53 @@
         margin-left: 3.5rem;
       }
     }
+<<<<<<< HEAD
   }
 <<<<<<< HEAD
 }
 =======
+=======
+    @media (max-width:1000px){
+      padding: 6rem 8rem;
+    }
+    @media (max-width:850px){
+      padding: 6rem 4rem;
+      &__video {
+        flex: 1 1 50%;
+      }
+      
+      &__image {
+        flex: 1 1 50%;
+      }
+    }
+
+    @media (max-width:750px){
+      flex-direction: column;
+      align-items: center;
+
+      &__video {
+        margin: 0 auto;
+      }
+    }
+  }//Demo Section End
+
+  
+>>>>>>> d4bffe5ae8145794ebb39ffbb66bd20f452a37aa
 }
 
 // CARD SECTION
 .card-section {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  
   &-launch {
+    margin: 5rem 10rem;
     display: flex;
+    gap: 5rem;
 
     &__img {
-      width: 55rem;
+      width: 35rem;
       height: 26rem;
+      min-width: 35rem;
+      min-height: 26rem;
       box-shadow: 0px 4px 20px #0000002E;
       background-color: $color-white;
       padding: 2rem;
@@ -81,7 +118,7 @@
     }
 
     &__desc {
-      padding: 8rem;
+      align-self: center;
     }
   }
 
@@ -90,6 +127,21 @@
 
     & > div {
       padding: 4rem 4rem 4rem 0;
+    }
+  }
+
+  @media (max-width:800px){
+    margin: 5rem 3rem;
+    &-launch {
+      flex-direction:column;
+      align-items: center;
+
+    }
+  }
+  @media (max-width:650px){
+    flex-wrap: wrap;
+    &-launch {
+      justify-content: center;
     }
   }
 }
