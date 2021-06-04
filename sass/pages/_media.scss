@@ -1,10 +1,11 @@
 .media-cards {
-
+  margin:  0rem 10rem;
   &__card {
     display: flex;
     justify-content: space-between;
     background-color: $color-section-bg;
     padding: 5rem;
+    margin-bottom: 2rem;
 
 
     & div:first-child {
@@ -24,6 +25,7 @@
         color: transparent;
         -webkit-text-stroke: 2px $color-red-2;
       }
+      
 
       .top-pic {
         position: absolute;
@@ -33,12 +35,36 @@
       }
     }
   }
+
+  @media (max-width:950px){
+    margin: 0 7rem;
+
+    span {
+      display: none;
+    }
+    &__card {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .top-pic {
+      left: 8rem;
+      top:5rem;
+    }
+  }
+
+  @media (max-width:500px){
+    margin: 0 4rem;
+
+  }
 }
+
 
 .demo {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  // flex-wrap: wrap;
+  // gap: 2rem;
   margin-top: 2rem;
 
   div {
@@ -54,8 +80,16 @@
 
   &-right {
     img {
-      height: 100%;
-      width: 100%;
+      max-height: 100%;
+      max-width: 100%;
     }
+  }
+
+  @media (max-width:850px){
+    margin: 0 4rem;
+  }
+  @media (max-width:750px){
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

@@ -12,6 +12,14 @@ html {
 
 .container {
   margin: 0 8rem;
+
+  @media (max-width:1000px){
+  margin: 0 6rem;
+  }
+  @media (max-width:850px){
+    margin: 0 3rem;
+    }
+
 }
 
 img{

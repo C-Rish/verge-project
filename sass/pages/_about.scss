@@ -1,16 +1,23 @@
 .about {
   background-color: $color-section-bg;
+
+  @media (max-width:900px){
+    background-color: $color-white
+
+  }
   &-img{
     overflow: hidden;
     position: relative;
     top: 0;
     height: 95vh;
+
     &__img {
       width: 100vw;
       
       img {
         height: 85vh;
         width: 100%;
+        object-fit: cover;
       }
     }
   
@@ -28,7 +35,82 @@
         margin-top: 1.5rem;
       }
     }
-  }
+    @media (max-width:900px){
+    top: -12rem;
+    height: 70vh;
+    // margin:0;
+
+      
+      &__img {
+        margin: 0;
+        padding-top: 0;
+      
+        img {
+          // height: 10vh;
+          width: 100%;
+          object-fit:scale-down;
+        }
+      }
+
+      &__desc {
+        width: 400px;
+        top: 35rem;
+        left: 15rem;
+        p{
+          margin-top: 1rem;
+        }
+      }
+  
+    } // 900px Media End
+
+    @media (max-width:750px){
+      top: -14rem;
+      // margin:0;
+      
+      
+      &__img {
+        
+        height: 60rem;
+        img {
+          height: 100%;
+            width: 100%;
+            object-fit:scale-down;
+          }
+        }
+  
+        &__desc {
+          width: 400px;
+          height: 20rem;
+          top: 30rem;
+          left: 15rem;
+          padding: 3rem;
+          p{
+            margin-top: .5rem;
+          }
+        }
+    
+      } // 750px Media End
+
+      @media (max-width:550px){
+        height: 40rem;
+        &__img {
+          display: none;
+          position: static;
+        }
+        
+        &__desc {
+            // position: static;
+            width: 400px;
+            top: 18rem;
+            left:0;
+            p{
+              margin-top: .5rem;
+            }
+          }
+      }
+
+
+  } // IMG END
 
   &-card {
     display: flex;
@@ -40,12 +122,24 @@
     &__desc {
       width: 50%;
     }
+    @media (max-width:750px){
+      margin-top: -20rem;
+    }
+
+    @media (max-width:700px){
+      padding: 4rem 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
   }
+
 }
 
 // SOLUTIONS SECTION CSS
 .solutions {
-
   &-desc{
     width: 100%;
 
@@ -80,6 +174,7 @@
 .story {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 6rem 0;
 
   &-desc {
@@ -88,7 +183,6 @@
     p {
       padding: 1rem 8rem 1rem 0;
       line-height: 1.5;
-
     }
   }
 
@@ -124,7 +218,19 @@
       }
     }
   } 
-} 
+  @media (max-width:850px){
+    text-align: center;
+    p {
+      padding: 1rem 0rem 1rem 0;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width:450px){
+    margin: 0 2rem;
+  }
+} // STORY SECTION CSS END
+
 
 // LEADER SECTION CSS
 .leader {
@@ -133,14 +239,16 @@
   margin-bottom: 5rem;
 
   h3 {
-    margin: 5rem 0;
+    margin: 5rem auto;
     // border-bottom: solid 1px $color-red;
-    padding: 0 0 4px;
+    // padding: 0 0 4px;
   }
 
   &-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-bottom: 5rem;
 
   &__card {
@@ -176,14 +284,23 @@
       }
     }
   }
+
+  @media (max-width:450px){
+    h3{
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
 }
 
 // TEST SECTION
 .testimonials {
     background: url(../../img/about-img/testimonials-bg.png) center left;
     background-size: cover;
-    height: 49rem;
+    // height: 49rem;
     padding: 2rem 0;
+
+
     
     h3{
       border-bottom: 1px solid $color-red-2;
@@ -194,7 +311,7 @@
     &-main {
       display: flex;
       &__list {
-
+        flex: 1 2 50%;
           img {
             width: 5rem;
             height: 5rem;
@@ -204,6 +321,7 @@
           p{
             padding: 2rem;
             font-style: italic;
+            font-size: 2rem;
             width: 90%;
           }
           span {
@@ -221,5 +339,46 @@
 
         }
 
+        @media (max-width:1000px){
+          flex-direction: column;
+
+          & div:first-child {
+            border-right: none;
+             padding: 3rem;
+          }
+  
+          & div:last-child {
+            padding: 3rem;
+          }
+        } // 1000 media END
+
+        @media (max-width:625px){
+          margin: 0 2rem;
+          &__list {
+            flex: 1 1 100%;
+              img {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 1000px;
+              }
+    
+              p{
+                padding: 2rem;
+                width: 100%;
+              }
+              span {
+                padding-left: 2rem;
+              }
+            }
+
+        } // 1000 media END
+
     } // TESTI MAIN END
+
+    @media (max-width:450px){
+      h3{
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
 }// TESTI END
