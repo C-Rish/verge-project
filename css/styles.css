@@ -959,7 +959,8 @@ footer {
   @media (max-width: 800px) {
     .work-card {
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin: 0rem 2rem; }
       .work-card__left p {
         padding: 0; } }
 
